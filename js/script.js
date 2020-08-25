@@ -34,7 +34,7 @@ function getGeoCode(isIntial){
       return;
     }
   }
-  var url = "http://www.mapquestapi.com/geocoding/v1/address?key="+_app.Geokey+"&location="+location+",NZ";
+  var url = "https://www.mapquestapi.com/geocoding/v1/address?key="+_app.Geokey+"&location="+location+",NZ";
   fetch(url,{method:'GET'}).then(response => response.json()).then(process,handleGCError);
 }
 
